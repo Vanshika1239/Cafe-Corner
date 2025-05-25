@@ -1,0 +1,732 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-color: rgba(209, 23, 23, 0); */
+}
+
+.container {
+  margin: 20px;
+  /* margin: 0 80px 0 80px; */
+  /* padding: 50px; */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 950px 50px 550px 600px 800px 600px 600px 100px 400px 300px;
+  grid-template-areas: "head " "logo" "info" "servic" "product" "custm" "plan" "icon" "blood" "end";
+  overflow: hidden;
+}
+h1 {
+  color: #5a120f;
+   
+}
+.navbar .logo {
+  color: #5a120f;
+}
+.navbar {
+  /* background-image: url("https://www.shutterstock.com/image-vector/white-porcelain-cup-coffee-beans-260nw-2152791371.jpg"); */
+  background-image: url("https://www.shutterstock.com/image-photo/coffee-mug-grinded-beans-concept-600nw-2500190129.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 30px 40px 10px 50px;
+  grid-area: head;
+  /* background-color: bisque; */
+  display: flex;
+  /* justify-content:end; */
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+nav a {
+  font-size: 22px;
+  margin-left: 30px;
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+  justify-content: space-between;
+  margin-right: 20px;
+  font-weight: bold;
+  /* padding: 20px 30px 0px 0px; */
+}
+
+nav a:hover {
+   
+  color: rgba(54, 9, 9, 0.498);
+  font-weight: bold;
+  transform: scale(1.05);
+
+  /* background-color: rgb(210, 218, 218); */
+  /* box-shadow: 10px 5px 5px rgb(114, 80, 80); */
+}
+
+.main {
+  font-size: 55px;
+  color: black;
+  /* text-align:right; */
+  text-align: justify;
+  margin-top: 250px;
+  grid-area: head;
+  padding-left: 950px;
+}
+.main h1 {
+  font-size: 90px;
+  font-family: "Times New Roman", Times, serif;
+  padding-right: 350px;
+  padding-bottom: 20px;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+}
+.main p {
+  text-align: justify;
+  padding-right: 200px;
+  color: aliceblue;
+
+  font-size: 20px;
+}
+.main button {
+  color: white;
+  background-color: rgb(96, 15, 15);
+  margin: 50px;
+  font-size: 16px;
+  padding: 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  border: none;
+}
+.main button:hover {
+  background-color: rgb(234, 91, 91);
+}
+.logo {
+  grid-area: logo;
+  /* background-color: rgba(240, 248, 255, 0.735); */
+}
+.logo i {
+  font-size: 25px;
+  padding-left: 25px;
+  padding-top: 10px;
+  /* justify-content: space-between; */
+  color: rgb(61, 6, 6);
+}
+
+.info {
+  display: grid;
+  grid-area: info;
+  /* background-color: lightcoral; */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 250px;
+  grid-area: "img1 cont img2";
+  justify-content: space-between;
+}
+
+.info .imge1 {
+  filter: blur(4px);
+  /* filter: brightness(0.5px); */
+}
+
+.info h1 {
+  margin-top: 50px;
+}
+.info p {
+  margin-top: 30px;
+  text-align: justify;
+  /* text-transform: capitalize; */
+  text-indent: 30px;
+  grid-area: img1 cont img2;
+  width: 65%;
+}
+
+.info.image2 {
+  border-radius: 25px;
+}
+
+.info button {
+  color: white;
+  background-color: rgb(96, 15, 15);
+  margin: 50px;
+  font-size: 16px;
+  padding: 15px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.info button:hover {
+  background-color: rgb(234, 91, 91);
+}
+
+.services {
+  /* margin: 30px; */
+  display: grid;
+  grid-area: servic;
+  /* background-color: lightpink; */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px 350px;
+  grid-template-areas:
+    "C1 C1 C1"
+    "card1 card2 card3";
+}
+
+.box {
+  margin: 20px;
+  /* background-color: blue; */
+  grid-area: C1;
+  text-align: center;
+}
+.box p {
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-top: 30px;
+  text-align: center;
+
+  /* width: 75%; */
+}
+
+.card1 {
+  text-align: center;
+  margin: 25px;
+  grid-area: card1;
+  border: 2px solid white;
+  border-radius: 20px;
+  /* background-color:lightcyan; */
+}
+
+.card1:hover {
+  transform: scale(1.05);
+  background-color: rgb(246, 248, 248);
+  box-shadow: 10px 5px 5px rgb(114, 80, 80);
+}
+
+.card1 i {
+  padding-bottom: 30px;
+  font-size: 75px;
+  padding-left: 25px;
+  padding-top: 10px;
+  /* justify-content: space-between; */
+  color: rgb(61, 6, 6);
+}
+.card1 h3 {
+  padding-bottom: 20px;
+}
+.card1 p {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.card2 {
+  text-align: center;
+  margin: 25px;
+  grid-area: card2;
+  border: 2px solid white;
+  border-radius: 20px;
+  /* background-color: bisque; */
+}
+
+.card2:hover {
+  transform: scale(1.05);
+  background-color: rgb(246, 248, 248);
+  box-shadow: 10px 5px 5px rgb(114, 80, 80);
+}
+.card2 i {
+  padding-bottom: 30px;
+  font-size: 75px;
+  padding-left: 25px;
+  padding-top: 10px;
+  /* justify-content: space-between; */
+  color: rgb(79, 7, 7);
+}
+.card2 h3 {
+  padding-bottom: 20px;
+}
+.card2 p {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.card3 {
+  margin: 25px;
+  text-align: center;
+  grid-area: card3;
+  border: 2px solid white;
+  border-radius: 20px;
+  /* background-color: lightcoral; */
+}
+.card3:hover {
+  transform: scale(1.05);
+  background-color: rgb(246, 248, 248);
+  box-shadow: 10px 5px 5px rgb(114, 80, 80);
+}
+.card3 i {
+  padding-bottom: 30px;
+  font-size: 75px;
+  padding-left: 25px;
+  padding-top: 10px;
+  /* justify-content: space-between; */
+  color: rgb(61, 6, 6);
+}
+.card3 h3 {
+  padding-bottom: 20px;
+}
+.card3 p {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+.product {
+  margin: 80px;
+  /* margin-right: 200px; */
+  grid-area: product;
+  /* background-color: aquamarine; */
+  display: grid;
+  grid-template-rows: 200px 450px;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+  grid-template-areas:
+    "cn1 cn1 cn1 cn1"
+    "cd1 cd2 cd3 cd4";
+  text-align: justify;
+  /* text-align: center; */
+  gap: 20px;
+}
+.boxs {
+  grid-area: cn1;
+}
+.boxs h1 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.boxs p {
+  text-align: center;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+.product .cards1 {
+  background-image: url("https://i.pinimg.com/736x/bd/e0/f4/bde0f4c08108646744dcb99b51f9864a.jpg");
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+  grid-area: cd1;
+  /* background-color: brown; */
+  border: 2px solid rgb(223, 219, 219);
+  padding: 0 10px 0 10px;
+  border-radius: 20px;
+}
+
+.cards1:hover {
+  transform: scale(1.05);
+  background-color: rgb(246, 248, 248);
+  box-shadow: 10px 5px 5px rgb(114, 80, 80);
+}
+.product h3 {
+  text-align: start;
+  padding-top: 250px;
+  /* margin: 20px; */
+  color: rgb(103, 41, 5);
+}
+
+.product p {
+  /* padding-top: 10px; */
+  padding-bottom: 30px;
+  text-align: justify;
+}
+
+.product a {
+  display: block;
+  margin: 0 15px 15px;
+  text-decoration: none;
+  color: #5c0d0a;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.product a:hover {
+  color: #5a120f;
+  text-decoration: underline;
+}
+
+.product .cards2 {
+  background-image: url("https://burst.shopifycdn.com/photos/pouring-hot-coffee.jpg?width=1000&format=pjpg&exif=0&iptc=0");
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+  grid-area: cd2;
+  /* background-color: blue; */
+  border: 2px solid rgb(223, 219, 219);
+  padding: 0 10px 0 10px;
+  border-radius: 20px;
+}
+
+.cards2:hover {
+  transform: scale(1.05);
+  background-color: rgb(246, 248, 248);
+  box-shadow: 10px 5px 5px rgb(114, 80, 80);
+}
+
+.product .cards3 {
+  grid-area: cd3;
+  /* background-color:bisque; */
+  background-image: url("https://i.pinimg.com/736x/9e/37/03/9e3703fa88af7fc53a18341595f8a2c8.jpg");
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+  border: 2px solid rgb(223, 219, 219);
+  padding: 0 20px 0 20px;
+  border-radius: 20px;
+}
+
+.cards3:hover {
+  transform: scale(1.05);
+  background-color: rgb(246, 248, 248);
+  box-shadow: 10px 5px 5px rgb(114, 80, 80);
+}
+
+.product .cards4 {
+  grid-area: cd4;
+  /* background-color: burlywood; */
+  background-image: url("https://www.shutterstock.com/image-photo/coffee-mug-grinded-beans-concept-600nw-2500190127.jpg");
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+  border: 2px solid rgb(223, 219, 219);
+  padding: 0 20px 0 20px;
+  border-radius: 20px;
+}
+
+.cards4:hover {
+  transform: scale(1.05);
+  background-color: rgb(246, 248, 248);
+  box-shadow: 10px 5px 5px rgb(114, 80, 80);
+}
+
+.customers {
+  grid-area: custm;
+  /* background-color: lightgoldenrodyellow; */
+}
+.custmbox {
+  text-align: center;
+  margin: 0px;
+  padding: 30px;
+}
+
+.custmbox p {
+  line-height: 23px;
+  text-align: center;
+  padding: 20px 350px 50px 350px;
+}
+
+.feedback {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 30px 450px 10px 450px;
+}
+.custimg img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  margin-left: 680px;
+  border-radius: 50%;
+}
+.feedback p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+
+  /* margin-top: 50px; */
+  margin-bottom: 15px;
+}
+.feedback .author {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+.feedback .desg {
+  font-size: 14px;
+  color: #777;
+}
+
+.plan {
+  grid-area: plan;
+  /* background-color: lightcyan; */
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px 300px;
+  grid-template-areas:
+    "ha1 ha1 ha1"
+    "ca1 ca2 ca3";
+}
+
+.pl {
+  grid-area: ha1;
+  /* background-color: #5a120f; */
+}
+.pl h1 {
+  color: #5a120f;
+}
+.pl p {
+  padding: 20px 350px 200px 350px;
+  line-height: 23px;
+}
+
+.cad1 {
+  grid-area: ca1;
+  border: 2px solid rgb(186, 181, 181);
+  width: 50%;
+  margin-left: 250px;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.plan .cad1 h2,
+h3 {
+  padding: 10px;
+}
+
+.plan .cad1 button {
+  margin-top: 30px;
+  background-color: #5c0d0a;
+  color: white;
+  border-radius: 20px;
+  padding: 15px;
+  border: none;
+}
+
+.plan .cad1 button:hover {
+  transform: scale(1.05);
+  background-color: rgb(214, 87, 87);
+}
+
+.cad1:hover {
+  transform: scale(1.05);
+  background-color: rgb(246, 248, 248);
+  box-shadow: 10px 5px 5px rgb(114, 80, 80);
+}
+
+.cad1 ul {
+  list-style: none;
+}
+
+.cad2 {
+  grid-area: ca2;
+  border: 2px solid rgb(186, 181, 181);
+  width: 50%;
+  margin-left: 120px;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.cad2 ul {
+  list-style: none;
+}
+
+.plan .cad2 h2,
+h3 {
+  padding: 10px;
+}
+
+.plan .cad2 button {
+  margin-top: 30px;
+  background-color: #5c0d0a;
+  color: white;
+  border-radius: 20px;
+  padding: 15px;
+  border: none;
+}
+
+.plan .cad2 button:hover {
+  transform: scale(1.05);
+  background-color: rgb(214, 87, 87);
+}
+
+.cad2:hover {
+  transform: scale(1.05);
+  background-color: rgb(246, 248, 248);
+  box-shadow: 10px 5px 5px rgb(114, 80, 80);
+}
+
+.cad3 {
+  grid-area: ca3;
+  border: 2px solid rgb(186, 181, 181);
+  width: 50%;
+  /* margin: 0px 50px 0 50px; */
+  padding: 30px;
+  border-radius: 20px;
+  margin-right: 150px;
+}
+.plan .cad3 h2,
+h3 {
+  padding: 10px;
+}
+
+.cad3 ul {
+  list-style: none;
+}
+
+.plan .cad3 button {
+  margin-top: 30px;
+  background-color: #5c0d0a;
+  color: white;
+  border-radius: 20px;
+  padding: 15px;
+  border: none;
+}
+
+.plan .cad3 button:hover {
+  transform: scale(1.05);
+  background-color: rgb(214, 87, 87);
+}
+
+.cad3:hover {
+  transform: scale(1.05);
+  background-color: rgb(246, 248, 248);
+  box-shadow: 10px 5px 5px rgb(114, 80, 80);
+}
+
+.icon {
+  grid-area: icon;
+  /* background-color: bisque; */
+}
+.blood {
+  display: grid;
+  padding-top: 30px;
+  grid-area: blood;
+  /* background-color: aqua; */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px;
+  grid-template-areas: "img1 cc1";
+}
+.blood .box11 {
+  grid-area: img1;
+
+  background-image: url(https://img.freepik.com/premium-photo/cozy-winter-morning-home-with-hot-coffee-warm-blanket-candle-lights-heather-lavender-flowers_926199-4206401.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: 150px;
+  margin-right: 100px;
+  border-radius: 20px;
+}
+
+.blood .content {
+  grid-area: cc1;
+  /* background-color: #5c0d0a; */
+  text-align: center;
+  padding-right: 150px;
+  padding-left: 50px;
+}
+.content h1 {
+  text-align: justify;
+  color: #5a120f;
+  padding-bottom: 50px;
+}
+.content p {
+  text-align: justify;
+  padding-bottom: 50px;
+}
+.content button {
+  padding: 20px 50px 20px 50px;
+
+  color: aliceblue;
+  background-color: #801e1a;
+  border-radius: 20px;
+  display: inline-block;
+  border: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.content button:hover {
+  background-color: #e65b34;
+}
+
+.end {
+  grid-area: end;
+  /* background-color: brown; */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 300px 300px 300px;
+  margin-bottom: 300px;
+}
+
+.end h3 {
+  color: #5a120f;
+  padding-bottom: 20px;
+  font-size: 18px;
+}
+
+.end input {
+  width: 200px;
+  padding: 10px;
+  margin: 20px;
+  border: 2px solid white;
+  border-radius: 20px;
+  border: none;
+}
+.end button {
+  padding: 10px;
+  font-size: 15px;
+  background-color: #801e1a;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.end button:hover {
+  background-color: #e65b34;
+  transform: scale(1.05);
+}
+
+.social-icons {
+  font-size: 25px;
+  margin-right: 20px;
+  padding: 30px;
+  color: rgb(87, 6, 6);
+  display: inline-block;
+}
+
+h4 {
+  font-size: 18px;
+  color: #801e1a;
+  padding-bottom: 30px;
+}
+.quick-links a {
+  text-decoration: none;
+  color: black;
+  /* padding: 20px; */
+  margin: 20px;
+}
+
+.quick-links ul {
+  list-style: none;
+}
+
+.products a {
+  text-decoration: none;
+  color: black;
+  /* padding: 20px; */
+  margin: 20px;
+}
+
+.products ul {
+  list-style: none;
+}
+.end.img {
+  background-image: url(https://www.bestcoffeemakerreview.com/images/xSBIcut1.jpg.pagespeed.ic.UQlANIYDgd.jpg);
+}
+
+::-webkit-scrollbar {
+  background-color: #a77d7c;
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(105, 19, 6);
+  height: 10px;
+  border-radius: 20px;
+  background: linear-gradient(rgb(47, 5, 5), rgb(135, 99, 99), rgb(134, 25, 8));
+}
+
+
+
